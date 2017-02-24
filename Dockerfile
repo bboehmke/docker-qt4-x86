@@ -14,7 +14,7 @@ RUN dpkg --add-architecture i386 && \
 RUN git clone https://github.com/danmar/cppcheck.git /tmp/cppcheck && \
     mkdir -p /tmp/cppcheck/build && \
     cd /tmp/cppcheck/build && \
-    cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/opt/cppcheck ../ &&
+    cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/opt/cppcheck ../ && \
     make -j4 install && \
     rm -rf /tmp/cppcheck
 
