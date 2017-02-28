@@ -6,7 +6,7 @@ RUN dpkg --add-architecture i386 && \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y make git gcc g++ gdb cmake \
         g++-multilib qt4-default:i386 libidn11-dev:i386 libstdc++5:i386 \
-        libqt4-dev-bin:i386 qt4-qmake:i386 cppcheck && \
+        libqt4-dev-bin:i386 qt4-qmake:i386 libcurl3:i386 libxml2-dev:i386 cppcheck && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
